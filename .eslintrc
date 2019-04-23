@@ -1,0 +1,71 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "prettier", "prettier/react", "eslint:recommended"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "es6": true,
+        "jest": true
+    },
+    "rules": {
+        "linebreak-style": "off",
+        "global-require": "off",
+        "semi": ["warn", "never"],
+        "arrow-body-style": "off",
+        "no-multiple-empty-lines": ["warn", {
+            "max": 2
+        }],
+        "indent": ["warn", 4],
+        "key-spacing": ["warn", {
+            "align": {
+                "beforeColon": true,
+                "afterColon": true,
+                "on": "colon"
+            }
+        }],
+        "camelcase": ["warn", "always"],
+        "space-before-function-paren": "off",
+        "jsx-quotes": ["warn", "prefer-double"],
+
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "no-unused-expressions": [
+            "warn",
+            {
+                "allowTaggedTemplates": true
+            }
+        ],
+
+        "react/jsx-filename-extension": [1, {
+            "extensions": [".js", ".jsx"]
+        }],
+        "react/react-in-jsx-scope": "error",
+        "react/prefer-stateless-function": "warn",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-fragments": "warn",
+        "react/jsx-pascal-case": "warn",
+        "react/jsx-key": "warn",
+        "react/no-direct-mutation-state": "error",
+        "react/no-deprecated": "warn",
+        "react/no-unescaped-entities": "warn",
+
+        "no-underscore-dangle": [
+            2,
+            {
+                "allow": ["__REDUX_DEVTOOLS_EXTENSION__"]
+            }
+        ]
+    }
+}
