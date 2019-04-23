@@ -23,6 +23,7 @@ module.exports = {
         splitChunks: {
             chunks: 'all',
         },
+        // minimize: true,
     },
     devServer: {
         contentBase: paths.outputPath,

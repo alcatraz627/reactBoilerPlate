@@ -1,7 +1,12 @@
 import React from 'react';
+import { CssBaseline } from '@material-ui/core';
 
-const App = () => <div>
-    <h3>Henlo</h3>
-</div>
+import Navbar from './Navbar';
+
+const App = () =>
+    <div>
+        <CssBaseline />
+        <Navbar />
+    </div>
 
 export default App
